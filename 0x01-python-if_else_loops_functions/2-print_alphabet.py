@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("abcdefghijklmnopqrstuvwxyz", end="")
+from sth import string
+print("{}".format(string), end="")
