@@ -8,16 +8,20 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *turtoise = list;
-	listint_t *hare = list->next;
+	listint_t *hare = list;
 
 	if (!list)
 		return (0);
-	while (turtoise && hare)
+
+	while (turtoise->next != NULL && hare->next->next != NULL)
 	{
 		if (turtoise == hare)
 			return (1);
-		turtoise = list->next;
-		hare = list->next->next;
+		else
+		{
+			turtoise = list->next;
+			hare = list->next->next;
+		}
 	}
 	return (0);
 }
