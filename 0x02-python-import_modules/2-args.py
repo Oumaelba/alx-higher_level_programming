@@ -10,7 +10,6 @@ def print_arguments():
         print('1 argument:')
     else:
         print('{} arguments:'.format(argument_count))
-
     for i in range(argument_count):
         print('{}: {}'.format(i + 1, sys.argv[i + 1]))
 
