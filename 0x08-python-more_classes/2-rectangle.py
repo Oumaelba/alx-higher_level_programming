@@ -115,4 +115,4 @@ class Rectangle:
             int: The calculated perimeter of the rectangle.
         """
 
-        return self.width * 2 + self.height * 2
+        return self.__width * 2 + self.__height * 2
