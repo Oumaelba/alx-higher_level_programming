@@ -16,7 +16,6 @@ class Rectangle:
         No additional methods defined.
     """
 
-
     def __init__(self, width=0, height=0):
         """
         Initializes a new instance of the Rectangle class.
@@ -24,12 +23,11 @@ class Rectangle:
         Args:
             width (int, optional): The width of the rectangle. Defaults to 0.
             height (int, optional): The height of the rectangle. Defaults to 0.
-        
+
         Raises:
             ValueError: If width or height is less than 0.
             TypeError: If width or height is not an integer.
         """
-
 
         self.width = width
         self.height = height
@@ -42,7 +40,7 @@ class Rectangle:
         Returns:
             int: The width of the rectangle.
         """
-        
+
         return self.__width
 
     @width.setter
@@ -57,7 +55,6 @@ class Rectangle:
             ValueError: If width is less than 0.
             TypeError: If width is not an integer.
         """
-
 
         if isinstance(value, int):
             if value >= 0:
@@ -75,7 +72,6 @@ class Rectangle:
         Returns:
             int: The height of the rectangle.
         """
-
 
         return self.__height
 
