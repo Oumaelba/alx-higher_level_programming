@@ -9,10 +9,4 @@ class MyList(list):
         """prints the list, but sorted
         (ascending sort)
         """
-        n = len(self)
-        for i in range(n-1):
-            for j in range(n-i-1):
-                if self[j] > self[j+1]:
-                    self[j], self[j+1] = self[j+1], self[j]
-        for element in self:
-            print(element)
+        print(sorted(self))
