@@ -38,4 +38,3 @@ The 'tests' directory contains test files for each script:
 - **4-print_square.txt:** Test cases for the `print_square` function.
 - **5-text_indentation.txt:** Test cases for the `text_indentation` function.
 - **6-max_integer_test.py:** Test cases for the `max_integer` function.
-
